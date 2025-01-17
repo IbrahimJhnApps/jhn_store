@@ -11,4 +11,7 @@ class JImages {
   static const String apple = "assets/logos/";
   static const String facebook = "assets/logos/";
 
+//OnBoarding Images
+static const String OnBoardingImage1 = "assets/images/on_boarding_images/one.png";
+
 }

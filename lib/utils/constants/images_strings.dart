@@ -3,13 +3,13 @@
 class JImages {
 
   //App Logos
-  static const String darkAppLogo = "assets/logos/logo.png";
-  static const String lightAppLogo = "assets/logos/logo.png";
+  static const String darkAppLogo = "assets/logos/dark.png";
+  static const String lightAppLogo = "assets/logos/light.png";
 
   //Social Media Logos
-  static const String google = "assets/logos/";
-  static const String apple = "assets/logos/";
-  static const String facebook = "assets/logos/";
+  static const String google = "assets/logos/google.png";
+  static const String apple = "assets/logos/apple.png";
+  static const String meta = "assets/logos/meta.png";
 
 //OnBoarding Images
 static const String OnBoardingImage1 = "assets/images/on_boarding_images/onboarding_image_one.png";

@@ -32,6 +32,7 @@ class JTexts {
   static String createAccount = "Create Account";
   static String orSignInWith = "Or sign in with";
   static String iAgreeTO = "I agree to";
+  static String and = "and";
   static String privacyPolicy = "Privacy Policy";
   static String termsOfUse = "Terms of use";
   static String verificationCode = "Verification Code";

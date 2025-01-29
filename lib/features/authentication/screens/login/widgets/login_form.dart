@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:jhn_store/features/authentication/screens/signup/signup.dart';
 import 'package:jhn_store/utils/constants/sizes.dart';
 import 'package:jhn_store/utils/constants/text_strings.dart';
 
@@ -28,6 +30,7 @@ class JLoginForm extends StatelessWidget {
 
             ///Password
             TextFormField(
+              obscureText: true,
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: JTexts.password,
@@ -71,9 +74,8 @@ class JLoginForm extends StatelessWidget {
             ///Create Account Button
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text(JTexts.createAccount),
+              child: OutlinedButton(
+                onPressed: () => Get.to(() => const SignupScreen()), child: Text( JTexts.createAccount),
               ),
             ),
             const SizedBox(height: JSizes.spaceBtnSection),

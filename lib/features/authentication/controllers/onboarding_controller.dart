@@ -30,7 +30,8 @@ class OnBoardingController extends GetxController {
 
   ///Update Current Index & Jump to Last Page
   void skipPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpToPage(2);
+    // currentPageIndex.value = 2;
+    // pageController.jumpToPage(2);
+    Get.to(LoginScreen());
   }
 }

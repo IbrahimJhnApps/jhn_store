@@ -52,5 +52,8 @@ class JTexts {
   static String emailNotReceivedMessage = "Didn`t get the email? Resend Email";
   static String yourAccountCreatedTitle = "Your Account Successful Created!";
   static String yourAccountCreatedTitleSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Crated, Unleash the Joy of Seamless Online Shipping";
+  static String jContinue= "Continue";
+  static String submit= "Submit";
+  static String jDone= "Done";
 
 }

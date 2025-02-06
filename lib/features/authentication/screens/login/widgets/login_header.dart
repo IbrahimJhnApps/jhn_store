@@ -13,18 +13,21 @@ class JLoginHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = JHelperFunctions.isDarkMode(context);
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Image(
           height: 150,
           image: AssetImage(dark ? JImages.lightAppLogo : JImages.darkAppLogo),
         ),
         Text(
-          JTexts.loginTitle, style: Theme.of(context).textTheme.headlineMedium,
+          JTexts.loginTitle,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
         SizedBox(height: JSizes.sm),
         Text(
-          JTexts.loginSubTitle, style: Theme.of(context).textTheme.bodyMedium,),
+          JTexts.loginSubTitle,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
       ],
     );
   }

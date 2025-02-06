@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:jhn_store/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:jhn_store/features/authentication/screens/signup/signup.dart';
+import 'package:jhn_store/navigation_menu.dart';
 import 'package:jhn_store/utils/constants/sizes.dart';
 import 'package:jhn_store/utils/constants/text_strings.dart';
 
@@ -52,9 +54,9 @@ class JLoginForm extends StatelessWidget {
                   ],
                 ),
 
-                //Forgot password
+                ///Forgot password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgotPassword()),
                   child: Text(JTexts.forgetPassword),
                 ),
               ],
@@ -65,7 +67,7 @@ class JLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 child: Text(JTexts.signIn),
               ),
             ),

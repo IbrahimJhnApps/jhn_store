@@ -11,9 +11,10 @@ class JImages {
   static const String apple = "assets/logos/apple.png";
   static const String meta = "assets/logos/meta.png";
 
-//OnBoarding Images
-static const String OnBoardingImage1 = "assets/images/on_boarding_images/onboarding_image_one.png";
-static const String OnBoardingImage2 = "assets/images/on_boarding_images/onboarding_image_two.png";
-static const String OnBoardingImage3 = "assets/images/on_boarding_images/onboarding_image_three.png";
+  //OnBoarding Images
+  static const String OnBoardingImage1 = "assets/images/on_boarding_images/onboarding_image_one.png";
+  static const String OnBoardingImage2 = "assets/images/on_boarding_images/onboarding_image_two.png";
+  static const String OnBoardingImage3 = "assets/images/on_boarding_images/onboarding_image_three.png";
+  static const String OnBoardingImage4 = "assets/images/on_boarding_images/onboarding_image_login.png";
 
 }

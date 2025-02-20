@@ -29,7 +29,7 @@ class VerifyEmailScreen extends StatelessWidget {
             children: [
               ///Image
               Image(
-                image: AssetImage(JImages.OnBoardingImage4),
+                image: AssetImage(JImages.onBoardingImage4),
                 width: JHelperFunctions.screenWidth(), //* 0.6,
               ),
               const SizedBox(
@@ -67,7 +67,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () => Get.to(() => SuccessScreen(
-                          image: JImages.OnBoardingImage4,
+                          image: JImages.onBoardingImage4,
                           title: JTexts.yourAccountCreatedTitle,
                           subtitle: JTexts.yourAccountCreatedTitleSubTitle,
                           onPressed: () => Get.to(() => const LoginScreen()),

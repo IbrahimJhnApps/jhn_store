@@ -30,7 +30,7 @@ class JColors {
 
  //Background Container Color
   static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = Colors.white.withOpacity(0.1);
+  static Color darkContainer = Colors.white.withValues(alpha: 0.1);
 
   //Button Colors
   static const Color buttonPrimary = Color(0xFF7b68ff);

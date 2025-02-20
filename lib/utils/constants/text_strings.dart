@@ -1,5 +1,5 @@
 
-/// This class contains all the App Text in String formats.
+// This class contains all the App Text in String formats.
 
 class JTexts {
   //GLOBAL TEXTS

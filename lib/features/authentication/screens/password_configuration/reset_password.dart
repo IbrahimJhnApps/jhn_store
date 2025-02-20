@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:jhn_store/features/authentication/screens/login/login_screen.dart';
 import 'package:jhn_store/utils/constants/images_strings.dart';
-
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 import '../../../../utils/helpers/helper_functions.dart';
@@ -30,7 +28,7 @@ class ResetScreen extends StatelessWidget {
           children: [
             ///Image
             Image(
-              image: AssetImage(JImages.OnBoardingImage4),
+              image: AssetImage(JImages.onBoardingImage4),
               width: JHelperFunctions.screenWidth()* 0.6,
             ),
             const SizedBox(

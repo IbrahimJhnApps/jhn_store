@@ -21,7 +21,7 @@ class NavigationMenu extends StatelessWidget {
             selectedIndex: controller.selectedIndex.value,
             onDestinationSelected: (index) => controller.selectedIndex.value = index,
             backgroundColor: darkMode? JColors.black : Colors.white,
-            indicatorColor: darkMode? JColors.white.withOpacity(0.1) : JColors.black.withOpacity(0.1),
+            indicatorColor: darkMode? JColors.white.withValues(alpha: 0.1) : JColors.black.withValues(alpha: 0.1),
 
             destinations: const [
               NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
@@ -39,5 +39,5 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [ const HomeScreen(), Container(color: Colors.purple), Container(color: Colors.orange), Container(color: Colors.blue)];
+  final screens = [ const HomeScreen(), Container(color: Colors.purple), Container(color: Colors.orange), Container(color: Colors.red)];
 }

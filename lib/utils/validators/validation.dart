@@ -1,4 +1,3 @@
-
 class JValidator {
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
@@ -6,7 +5,7 @@ class JValidator {
     }
 
     //Regular expression for normal email validation
-    final emailRedExp = RegExp(r'^[\W-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+    final emailRedExp = RegExp(r'^[\W-.]+@([\w-]+\.)+[\w-]{2,4}$'); // Corrected Line 9
 
     if(!emailRedExp.hasMatch(value)) {
       return 'Invalid email address.';
@@ -15,33 +14,27 @@ class JValidator {
     return null;
   }
 
-  static String? validatePassword(String value) {
-  if (value == null || value.isEmpty) {
-    return 'Password is required.';
-  }
+  static String? validatePassword(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Password is required.';
+    }
 
+    if (value.length < 6) {
+      return 'Password must be at least 6 characters long';
+    }
 
-  //Check for minimum password length
-  if (value.length < 6) {
-    return 'Password must be at least 6 characters long';
-  }
+    if (!value.contains(RegExp(r'[A-Z]'))) {
+      return 'Password must contain at least one uppercase letter';
+    }
 
-  //Check for uppercase letters
-  if (value.contains(RegExp(r'[A-Z]'))) {
-    return 'Password must contain at least one uppercase letter';
-  }
+    if (!value.contains(RegExp(r'[0-9]'))) {
+      return 'Password must contain at least one number';
+    }
 
-  //Check for numbers
-  if (value.contains(RegExp(r'[0-9]'))) {
-    return 'Password must contain at least one number';
-  }
-
-  //Check for special characters
-  if (value.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) {
-    return 'Password must contain at least one special character';
-  }
-  return null;
-
+    if (!value.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) { // Corrected Line 39
+      return 'Password must contain at least one special character';
+    }
+    return null;
   }
 
   static String? validatePhoneNumber(String? value) {

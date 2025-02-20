@@ -14,9 +14,10 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = JHelperFunctions.isDarkMode(context);
+    final dark = JHelperFunctions.isDarkMode(context); // Line 17
 
     return Scaffold(
+      backgroundColor: dark ? Colors.grey[900] : Colors.white, // Example usage
       body: SingleChildScrollView(
         child: Padding(
           padding: JSpacingStyle.paddingWithAppBarHeight,

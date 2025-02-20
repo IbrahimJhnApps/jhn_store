@@ -28,7 +28,7 @@ class JCircularContainer extends StatelessWidget {
       padding: const EdgeInsets.all(0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: JColors.textWhite.withOpacity(0.1),
+        color: JColors.textWhite.withValues(alpha: 0.1),
       ),
       child: child,
     );

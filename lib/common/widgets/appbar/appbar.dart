@@ -11,7 +11,7 @@ class JAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leadingIcon,
     this.leadingOnPressed,
-    this.showBackArrow = false,
+    this.showBackArrow = true,
   });
 
   final Widget? title;
@@ -25,17 +25,10 @@ class JAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: JSizes.md),
       child: AppBar(
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
         leading: showBackArrow
-            ? IconButton(
-                onPressed: () => Get.back(),
-                icon: const Icon(Iconsax.arrow_left))
-            : leadingIcon != null
-                ? IconButton(
-                    onPressed: leadingOnPressed,
-                    icon: Icon(leadingIcon),
-                  )
-                : null,
+            ? IconButton( onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left))
+            : leadingIcon != null ? IconButton( onPressed: leadingOnPressed, icon: Icon(leadingIcon),) : null,
         title: title,
         actions: actions,
       ),

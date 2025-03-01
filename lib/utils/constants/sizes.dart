@@ -32,8 +32,8 @@ class JSizes {
 
   //Default spacing Btn Section
   static const double defaultSpace = 24.0;
-  static const double spaceBtnItem = 16.0;
-  static const double spaceBtnSection = 32.0;
+  static const double spaceBtnItems = 16.0;
+  static const double spaceBtnSections = 32.0;
 
   //Border Radius
   static const double borderRadiusSm = 4.0;
@@ -67,4 +67,5 @@ class JSizes {
 
   //Grid View Spacing
   static const double gridViewSpacing = 16.0;
+
 }

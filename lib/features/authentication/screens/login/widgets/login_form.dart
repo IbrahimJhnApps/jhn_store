@@ -17,7 +17,7 @@ class JLoginForm extends StatelessWidget {
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: JSizes.spaceBtnSection),
+            vertical: JSizes.spaceBtnSections),
         child: Column(
           children: [
 
@@ -61,7 +61,7 @@ class JLoginForm extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: JSizes.spaceBtnSection),
+            const SizedBox(height: JSizes.spaceBtnSections),
 
             ///Sign in Button
             SizedBox(
@@ -71,7 +71,7 @@ class JLoginForm extends StatelessWidget {
                 child: Text(JTexts.signIn),
               ),
             ),
-            const SizedBox(height: JSizes.spaceBtnItem),
+            const SizedBox(height: JSizes.spaceBtnItems),
 
             ///Create Account Button
             SizedBox(
@@ -80,7 +80,7 @@ class JLoginForm extends StatelessWidget {
                 onPressed: () => Get.to(() => const SignupScreen()), child: Text( JTexts.createAccount),
               ),
             ),
-            const SizedBox(height: JSizes.spaceBtnSection),
+            const SizedBox(height: JSizes.spaceBtnSections),
           ],
         ),
       ),

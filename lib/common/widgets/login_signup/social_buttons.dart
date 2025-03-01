@@ -26,7 +26,7 @@ class JSocialButtons extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(width: JSizes.spaceBtnItem),
+        const SizedBox(width: JSizes.spaceBtnItems),
 
         Container(
           decoration: BoxDecoration(
@@ -42,7 +42,7 @@ class JSocialButtons extends StatelessWidget {
           ),
         ),
 
-        const SizedBox(width: JSizes.spaceBtnItem),
+        const SizedBox(width: JSizes.spaceBtnItems),
 
         Container(
           decoration: BoxDecoration(

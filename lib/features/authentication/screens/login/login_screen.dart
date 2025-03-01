@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
 
               /// Divider
               JFormDivider(dividerText: JTexts.orSignInWith.capitalize!),
-              const SizedBox(height: JSizes.spaceBtnSection),
+              const SizedBox(height: JSizes.spaceBtnSections),
 
               /// Footer
               const JSocialButtons(),

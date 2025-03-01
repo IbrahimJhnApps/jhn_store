@@ -15,7 +15,7 @@ class JTermsAndConditionCheckbox extends StatelessWidget {
     return Row(
       children: [
         SizedBox(width: 24, height: 24, child: Checkbox(value: true, onChanged: (value) {} ),),
-        const SizedBox(height: JSizes.spaceBtnItem,),
+        const SizedBox(height: JSizes.spaceBtnItems,),
         Text.rich(TextSpan(children: [
           TextSpan(text: '${JTexts.iAgreeTO} ', style: Theme.of(context).textTheme.bodySmall),
           TextSpan(text: JTexts.privacyPolicy, style: Theme.of(context).textTheme.bodyMedium!.apply(

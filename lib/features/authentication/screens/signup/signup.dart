@@ -20,15 +20,15 @@ class SignupScreen extends StatelessWidget {
           children: [
             ///Title
             Text(JTexts.signupTitle, style: Theme.of(context).textTheme.headlineMedium,),
-            const SizedBox(height: JSizes.spaceBtnSection),
+            const SizedBox(height: JSizes.spaceBtnSections),
 
             ///Form
             const JSignupForm(),
-            const SizedBox(height: JSizes.spaceBtnSection),
+            const SizedBox(height: JSizes.spaceBtnSections),
 
             ///Divider
             JFormDivider(dividerText: JTexts.orSignInWith.capitalize!),
-            const SizedBox(height: JSizes.spaceBtnSection),
+            const SizedBox(height: JSizes.spaceBtnSections),
 
             ///Divider
             const JSocialButtons(),

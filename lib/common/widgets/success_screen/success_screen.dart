@@ -29,7 +29,7 @@ class SuccessScreen extends StatelessWidget {
                 width: JHelperFunctions.screenWidth()* 0.6,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnSection,
+                height: JSizes.spaceBtnSections,
               ),
 
               ///Title & Sub Title
@@ -39,7 +39,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnItem,
+                height: JSizes.spaceBtnItems,
               ),
               Text(
                 subtitle,
@@ -47,7 +47,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnSection,
+                height: JSizes.spaceBtnSections,
               ),
 
               ///Buttons

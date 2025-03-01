@@ -33,7 +33,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 width: JHelperFunctions.screenWidth(), //* 0.6,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnSection,
+                height: JSizes.spaceBtnSections,
               ),
 
               ///Title & Sub Title
@@ -43,7 +43,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnItem,
+                height: JSizes.spaceBtnItems,
               ),
               Text(
                 'support@appbyjhn.com',
@@ -51,7 +51,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnItem,
+                height: JSizes.spaceBtnItems,
               ),
               Text(
                 JTexts.confirmEmailSubTitle,
@@ -59,7 +59,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: JSizes.spaceBtnSection,
+                height: JSizes.spaceBtnSections,
               ),
 
               ///Buttons
@@ -74,7 +74,7 @@ class VerifyEmailScreen extends StatelessWidget {
                         )),
                     child: Text(JTexts.jContinue)),
               ),
-              const SizedBox(height: JSizes.spaceBtnSection),
+              const SizedBox(height: JSizes.spaceBtnSections),
               SizedBox(
                 width: double.infinity,
                 child: TextButton(

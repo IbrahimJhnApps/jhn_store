@@ -25,7 +25,7 @@ class OnBoardingPage extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: JSizes.spaceBtnItem,),
+          const SizedBox(height: JSizes.spaceBtnItems,),
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

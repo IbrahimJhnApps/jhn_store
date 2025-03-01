@@ -32,7 +32,7 @@ class ResetScreen extends StatelessWidget {
               width: JHelperFunctions.screenWidth()* 0.6,
             ),
             const SizedBox(
-              height: JSizes.spaceBtnSection,
+              height: JSizes.spaceBtnSections,
             ),
 
             ///Title & Sub Title
@@ -42,7 +42,7 @@ class ResetScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: JSizes.spaceBtnItem,
+              height: JSizes.spaceBtnItems,
             ),
             Text(
               JTexts.changeYourPasswordSubTitle,
@@ -50,7 +50,7 @@ class ResetScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: JSizes.spaceBtnSection,
+              height: JSizes.spaceBtnSections,
             ),
 
             ///Buttons
@@ -60,7 +60,7 @@ class ResetScreen extends StatelessWidget {
                   onPressed: () => Get.to(() => const LoginScreen()), child: Text(JTexts.jDone)),
             ),
             const SizedBox(
-              height: JSizes.spaceBtnItem,
+              height: JSizes.spaceBtnItems,
             ),
             SizedBox(
               width: double.infinity,

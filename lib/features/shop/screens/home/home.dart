@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:jhn_store/common/widgets/appbar/appbar.dart';
 import 'package:jhn_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:jhn_store/utils/constants/colors.dart';
-import 'package:jhn_store/utils/constants/text_strings.dart';
+import 'package:jhn_store/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:jhn_store/common/widgets/texts/section_heading.dart';
+import 'package:jhn_store/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:jhn_store/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,25 +12,45 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
+          child: Column(
+        children: [
+          /// Header Container
+          JPrimaryHeaderContainer(
+              child: Column(
+            children: [
+              ///Appbar
+              const JHomeAppBar(),
+              const SizedBox(
+                height: JSizes.spaceBtnSections,
+              ),
 
-            JPrimaryHeaderContainer(
+              /// Searchbar
+              const JSearchContainer(text: 'Search in Store'),
+              const SizedBox(
+                height: JSizes.spaceBtnSections,
+              ),
+
+              /// Categories
+              Padding(
+                padding: const EdgeInsets.only(left: JSizes.defaultSpace),
                 child: Column(
                   children: [
-                    JAppBar( title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(JTexts.homeAppbarTitle, style: Theme.of(context).textTheme.labelMedium!.apply(color: JColors.grey)),
-                        Text(JTexts.homeAppbarSubTitle, style: Theme.of(context).textTheme.headlineSmall!.apply(color: JColors.white)),
-                      ],
-                    ),),
+
+                    ///  Heading
+                    JSelectionHeading(title: 'Popular Categories', showActionButton: false,),
+                    const SizedBox(
+                      height: JSizes.spaceBtnItems,
+                    ),
+
+                    /// Categories
+                    ListView ()
                   ],
-                )
-            ),
-          ],
-        )
-      ),
+                ),
+              )
+            ],
+          )),
+        ],
+      )),
     );
   }
 }

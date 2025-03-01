@@ -24,7 +24,7 @@ class ForgotPassword extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: JSizes.spaceBtnItem,
+              height: JSizes.spaceBtnItems,
             ),
             Text(
               JTexts.forgetPasswordSubTitle,
@@ -32,7 +32,7 @@ class ForgotPassword extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: JSizes.spaceBtnSection * 2,
+              height: JSizes.spaceBtnSections * 2,
             ),
 
             ///Text Field
@@ -40,7 +40,7 @@ class ForgotPassword extends StatelessWidget {
               decoration: InputDecoration( labelText: JTexts.email, prefixIcon: Icon(Iconsax.direct_right) ),
             ),
             const SizedBox(
-              height: JSizes.spaceBtnItem,
+              height: JSizes.spaceBtnItems,
             ),
 
             ///Submit Button

@@ -95,7 +95,7 @@ class JSignupForm extends StatelessWidget {
 
           ///Terms and Conditions Checkbox
           const JTermsAndConditionCheckbox(),
-          const SizedBox(height: JSizes.spaceBtnSection),
+          const SizedBox(height: JSizes.spaceBtnSections),
 
           ///Sign Up Button
           SizedBox(
@@ -105,7 +105,7 @@ class JSignupForm extends StatelessWidget {
               child: Text(JTexts.createAccount),
             ),
           ),
-          const SizedBox(height: JSizes.spaceBtnSection),
+          const SizedBox(height: JSizes.spaceBtnSections),
         ],
       ),
     );

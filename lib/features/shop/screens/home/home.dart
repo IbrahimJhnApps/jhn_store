@@ -3,6 +3,9 @@ import 'package:jhn_store/common/widgets/custom_shapes/containers/primary_header
 import 'package:jhn_store/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:jhn_store/common/widgets/texts/section_heading.dart';
 import 'package:jhn_store/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:jhn_store/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:jhn_store/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:jhn_store/utils/constants/images_strings.dart';
 import 'package:jhn_store/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,40 +18,48 @@ class HomeScreen extends StatelessWidget {
           child: Column(
         children: [
           /// Header Container
-          JPrimaryHeaderContainer(
+          const JPrimaryHeaderContainer(
               child: Column(
             children: [
               ///Appbar
-              const JHomeAppBar(),
-              const SizedBox(
+              JHomeAppBar(),
+              SizedBox(
                 height: JSizes.spaceBtnSections,
               ),
 
               /// Searchbar
-              const JSearchContainer(text: 'Search in Store'),
-              const SizedBox(
+              JSearchContainer(text: 'Search in Store'),
+              SizedBox(
                 height: JSizes.spaceBtnSections,
               ),
 
               /// Categories
               Padding(
-                padding: const EdgeInsets.only(left: JSizes.defaultSpace),
+                padding: EdgeInsets.only(left: JSizes.defaultSpace),
                 child: Column(
                   children: [
-
                     ///  Heading
-                    JSelectionHeading(title: 'Popular Categories', showActionButton: false,),
-                    const SizedBox(
+                    JSelectionHeading(
+                      title: 'Popular Categories',
+                      showActionButton: false,
+                    ),
+                    SizedBox(
                       height: JSizes.spaceBtnItems,
                     ),
 
                     /// Categories
-                    ListView ()
+                    JHomeCategories()
                   ],
                 ),
               )
             ],
           )),
+
+          /// Body
+          Padding(
+            padding: EdgeInsets.all(JSizes.defaultSpace),
+            child: JPromoSlider(banners: [JImages.promoBanner1, JImages.promoBanner2, JImages.promoBanner3, JImages.promoBanner4],),
+          )
         ],
       )),
     );
